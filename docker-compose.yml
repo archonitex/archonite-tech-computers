@@ -2,9 +2,10 @@ version: '3'
 
 services:
   web:
-    image: nginx:latest
+    build: .
+    image: archonite-tech-site:latest
     volumes:
-      - ./frontend:/usr/share/nginx/html
+      - ./frontend:/usr/share/nginx/html:ro
     ports:
-      - "5656:80"
+      - "8686:80"
     restart: always
