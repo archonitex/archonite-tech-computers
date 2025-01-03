@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>No Sidebar - Arcana by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<style>
+		body {
+			line-height: 1.6;
+		}
+
+		.collapsible {
+			background-color: #f1f1f1;
+			color: #333;
+			cursor: pointer;
+			padding: 10px;
+			border: 1px solid #ccc;
+			text-align: left;
+			outline: none;
+			font-size: 16px;
+			width: 100%;
+			margin-top: 1em;
+		}
+
+		.collapsible:hover {
+			background-color: #ddd;
+		}
+
+		.content {
+			padding: 0 15px;
+			display: none;
+			overflow: hidden;
+			border: 1px solid #ccc;
+			border-top: none;
+		}
+
+		.content p {
+			margin: 10px 0;
+		}
+
+		.price {
+			font-weight: bold;
+			color: #007BFF;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header">
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<!-- <li>
+								<a href="#">Dropdown</a>
+								<ul>
+									<li><a href="#">Lorem dolor</a></li>
+									<li><a href="#">Magna phasellus</a></li>
+									<li><a href="#">Etiam sed tempus</a></li>
+									<li>
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Lorem dolor</a></li>
+											<li><a href="#">Phasellus magna</a></li>
+											<li><a href="#">Magna phasellus</a></li>
+											<li><a href="#">Etiam nisl</a></li>
+											<li><a href="#">Veroeros feugiat</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Veroeros feugiat</a></li>
+								</ul>
+							</li> -->
+					<li class="current"><a href="rates.html">Rates</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<!-- Banner -->
+		<section id="banner">
+			<header>
+				<h2>Archonite Tech & Computers</h2>
+			</header>
+		</section>
+
+		<!-- Main -->
+		<section class="wrapper style1">
+			<div class="container">
+				<div id="content">
+
+					<!-- Content -->
+					<article>
+						<header>
+							<h2>Rates</h2>
+						</header>
+
+						<span class="image featured"><img style="max-height: 10em;object-fit: cover;"
+								src="images/motherboard.jpg" alt="" /></span>
+
+
+						<p>Please find flat rates below for some of our services. For other types of services, please contact us to discuss your needs.</p>
+
+						<button class="collapsible">System Diagnostics - <span class="price">$50</span></button>
+						<div class="content">
+							<p>A comprehensive review to identify and resolve issues, testing key components like the hard drive, memory, and operating system, with findings and repair estimates provided.</p>
+						</div>
+
+						<button class="collapsible">Component Installation or Replacement - <span
+								class="price">$49.99</span></button>
+						<div class="content">
+							<p>We install or replace components and ensure all components work.</p>
+						</div>
+
+						<button class="collapsible">System Build - <span class="price">$80.00</span></button>
+						<div class="content">
+							<p>Get your system expertly built, complete with operating system installation. We ensure safe handling, clean cable management, and a ready-to-use setup. All drivers and software updates are included.</p>
+						</div>
+
+						<button class="collapsible">Software Installation - <span class="price">$49.99</span></button>
+						<div class="content">
+							<p>We’ll install your operating system or required software, the latest updates, and necessary drivers to ensure your system works properly.</p>
+						</div>
+
+						<button class="collapsible">Data Transfer or Disk Cloning - <span
+								class="price">$69.99</span></button>
+						<div class="content">
+							<p>Transfer your important documents, music, and pictures to a new device, with a review of key file locations. We can also create an exact mirror image of your current drive to a new one, ideal for upgrades or replacements. This helps avoid file loss or reinstalling the operating system and software. A new device is required, and the original must be functional.</p>
+						</div>
+
+						<script>
+							const collapsibles = document.querySelectorAll(".collapsible");
+
+							collapsibles.forEach((button) => {
+								button.addEventListener("click", () => {
+									button.classList.toggle("active");
+									const content = button.nextElementSibling;
+
+									if (content.style.display === "block") {
+										content.style.display = "none";
+									} else {
+										content.style.display = "block";
+									}
+								});
+							});
+						</script>
+
+					</article>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section id="cta" class="wrapper style3">
+			<div class="container">
+				<header>
+					<div>
+						+1-613-897-5231
+					</div>
+					<div style="margin-top:0.5em;">
+						<a style="color:white;" href="mailto:info@archonite.ca">info@archonite.ca</a>
+					</div>
+					<div>
+						<a aria-label="Chat on WhatsApp" href="https://wa.me/16138975231"> <img style="width:11em;margin-top:1em;" alt="Chat on WhatsApp" src="images/WhatsAppButtonWhiteLarge.png" />
+					</div>
+				</header>
+				
+			</div>
+		</section>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; Archonite Tech & Computers 2025</li>
+						</ul>
+					</div>
+
+			</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
